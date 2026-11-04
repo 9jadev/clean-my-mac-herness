@@ -1,0 +1,23 @@
+{
+  "name": "sysdata-agent",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "scan": "tsx src/cli.ts",
+    "agent": "tsx src/agent.ts",
+    "agent:deepseek": "tsx src/agent-deepseek.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test src/shared/*.test.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^1.4.0",
+    "openai": "^7.50.0",
+    "zod": "^4.6.7"
+  }
+}
